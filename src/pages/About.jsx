@@ -18,7 +18,7 @@ const About = () => {
 			<header className="about-hero">
 				<h1 className="about-title">About Me</h1>
 				<p className="about-lead">
-					I'm a front-end developer who loves building clean, accessible,
+					I'm a front-end developer who likes building clean, accessible,
 					and performant web experiences. I focus on React and modern web
 					tooling to deliver polished products.
 				</p>
