@@ -9,6 +9,7 @@ const About = () => {
 		"HTML",
 		"CSS",
 		"TypeScript",
+		"Laravel",
 		"Node.js",
 		"Git",
 	];
