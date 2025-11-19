@@ -12,6 +12,7 @@ const Navbar = () => {
     { to: "/contact", label: "Contact" },
   ];
 
+
   return (
     <nav className="navbar">
       <div className="navbar-inner">
