@@ -1,13 +1,15 @@
 
 import React from "react";
 import Data from "../utils/Data";
+import { data } from "react-router-dom";
+import  img1 from "../assets/profile.png"
 
 
 const HeroSection = () => (
-  <section id="home" className="pt-32 pb-0 min-h-screen flex flex-col justify-between bg-gray-950 relative overflow-hidden">
+  <section id="home" className="pt-32 pb-0 min-h-screen flex flex-col justify-between bg-blue-950 relative overflow-hidden">
     {/* Dynamic Background */}
     <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#081e35] via-gray-950 to-black opacity-90 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#2A7B9B] via-gray-950 to-black opacity-90 mix-blend-multiply"></div>
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-600/20 rounded-full blur-[120px] animate-pulse"></div>
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] animate-pulse" style={{animationDelay: '2s'}}></div>
     </div>
@@ -25,9 +27,16 @@ const HeroSection = () => (
 
       {/* Main Heading with Typewriter */}
       <div className="max-w-5xl">
-          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-extrabold text-white leading-[1.1] mb-6 animate-[fade-in-up_1s_ease-out_forwards]">
+
+        <div className="flex items-center space-x-6 align-middle">
+           <img src={Data.image} alt={`${Data.name} Profile`} className="w-40 h-40 rounded-full object-cover mb-6" />
+           
+           <h1 className="text-5xl sm:text-7xl lg:text-8xl font-extrabold text-white leading-[1.1] mb-6 animate-[fade-in-up_1s_ease-out_forwards]">
             {Data.name},
           </h1>
+         
+        </div>
+          
           <div className="h-24 sm:h-32 lg:h-40"> {/* Fixed height to prevent layout shift */}
             <span className="block font-light text-white/90 text-4xl sm:text-6xl lg:text-7xl leading-tight">
                 {/* <TypewriterEffect text={Data.title} className="" /> */}

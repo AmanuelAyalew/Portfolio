@@ -2,11 +2,11 @@
 import React from "react";
 import Data from "../utils/Data";
 import { Menu, X, ArrowDown, Briefcase, ChevronRight, User, Aperture, Globe, MapPin, Calendar, Mail, Linkedin, Twitter } from 'lucide-react';
-import StaggerContainer from "../components/StaggerContainer";
+import StaggerContainer from "../components/StaggerContainer";  
 
 
 const About = () => (
-  <section id="about" className="py-24 bg-[#1f3044] border-b border-gray-800 relative px-5 md:px-12">
+  <section id="about" className="py-24 bg-[#1f3044] border-b border-gray-800 relative px-5 md:px-12 m-40">
     {/* <AnimatedSection className="max-w-7xl mx-auto px-4 md:px-12 grid grid-cols-1 lg:grid-cols-3 gap-16"> */}
       
       <div className="lg:col-span-2 text-gray-400 space-y-8 text-lg">
@@ -32,13 +32,13 @@ const About = () => (
         </div>
       </div>
 
-      <div className="lg:col-span-3 mt-14">
-        <h2 className="text-3xl font-bold text-white mb-8 lg:mt-0 mt-8">Tools & Expertise</h2>
-        <StaggerContainer className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4" staggerDelay={50}>
+      <div className="lg:row flex overflow-x-auto space-x-4 p-10 px-10">
+        <h2 className="text-3xl font-bold text-white mb-8 lg:mt-10 mt-18">Tools & Expertise</h2>
+        <StaggerContainer className="flex gap-4 overflow-x-auto py-2 px-2 snap-x snap-mandatory" staggerDelay={50}>
           {Data.skillsIcons.map((skill, index) => {
             const Icon = skill.icon;
             return (
-              <div key={index} className="flex flex-col items-center justify-center p-4 bg-gray-900/50 backdrop-blur-sm rounded-2xl border border-gray-700 hover:border-indigo-500 hover:bg-gray-800 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 group cursor-default h-32">
+              <div key={index} className="flex-shrink-0 w-46 flex flex-row items-start pt-10 ml-5 justify-center p-4  bg-gray-900/50 backdrop-blur-sm rounded-2xl border border-gray-700 hover:border-indigo-500 hover:bg-gray-800 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 group cursor-default h-32 snap-start">
                 <div className="transform group-hover:scale-110 group-hover:-translate-y-1 transition-transform duration-300">
                     <Icon {...(skill.iconProps || {})} />
                 </div>

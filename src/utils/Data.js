@@ -1,13 +1,18 @@
 
 import { Menu, X, ArrowDown, Briefcase, ChevronRight, User, Aperture, Globe, MapPin, Calendar, Mail, Linkedin, Twitter } from 'lucide-react';
+import  img1 from "../assets/profile.png"
+import  img2 from "../assets/Fooddelivery.jpg"
+import  img3 from "../assets/Ecommerce.jpg"
+import  img4 from "../assets/saas.jpg"
 
 // --- Mock Data ---
 const Data = {
   name: "Amanuel_A",
+  image: img1,
   title: "Ux designer who builds useful and eye pleasing design",
-  bio: "With over 15 years of expertise in innovative ventures, I've collaborated with brands like Google, Slack, YouTube, Sony, Blizzard entertainment, Volkswagen, Chevrolet, Spotify, Procter & Gamble, HBO, and LG, to name a few. I consider myself a versatile and practical visual designer, specializing in design systems, impactful visuals, and brand identity.",
-  currentRole: "Currently working at Zigma.",
-  location: "Based in Edinburgh, Scotland.",
+  bio: "I am a front-end developer with over 3 years of experience building responsive, user-friendly web applications. I specialize in modern web technologies such as React, Next.js, Tailwind CSS, and JavaScript, turning designs into pixel-perfect, high-performance interfaces. I am passionate about creating intuitive user experiences and writing clean, maintainable code that scales.",
+  currentRole: "Currently working at Aquila Ict Tech.",
+  location: "Based in Ethiopia, Addis Ababa",
   companies: [
     { name: "Google", classes: "text-white/70 hover:text-[#4285F4] transition duration-300" },
     { name: "YouTube", classes: "text-white/70 hover:text-[#FF0000] transition duration-300" },
@@ -25,58 +30,59 @@ const Data = {
   projects: [
     {
       id: 1,
-      title: "MoonWave - Crypto Investment Mobile Apps",
-      description: "A sleek and modern dark-mode mobile application design project focusing on usability and security for cryptocurrency investment. Includes comprehensive design system and interaction documentation.",
-      tags: ["Mobile Apps", "UX Design"],
-      location: "Germany",
-      duration: "2 months",
-      year: "2025",
-      image: "https://placehold.co/400x600/1e1e2e/999999?text=Mobile+Mockup+1"
+      title: "E-Shopify - E-commerce Platform",
+      description: "A responsive e-commerce web application built with React and Tailwind CSS. Features include product listing, filtering, shopping cart, and Stripe payment integration.",
+      tags: ["Web Apps", "Front-End Development"],
+      location: "USA",
+      duration: "3 months",
+      year: "2024",
+      image: img2,
     },
+    
     {
       id: 2,
-      title: "KraftG - Creative Agency Logo and Brand Guideline",
-      description: "Developed a modern, clean identity system for KraftG, including logo design, color palette, typography, and a comprehensive brand guideline document for internal and external use.",
-      tags: ["Branding", "Visual Design"],
-      location: "Denmark",
-      duration: "1 month",
-      year: "2025",
-      image: "https://placehold.co/400x600/1e1e2e/999999?text=Mobile+Mockup+2"
+      title: "Dashlytics - SaaS Analytics Dashboard",
+      description: "A real-time dashboard for data analytics using React, Redux, and Chart.js. Displays user data, analytics charts, and notifications with role-based access control.",
+      tags: ["Web Apps", "Dashboard"],
+      location: "UK",
+      duration: "4 months",
+      year: "2024",
+      image: img3,
     },
     {
       id: 3,
-      title: "Urbinex - Architecture Service Landing Page",
-      description: "A sleek and modern landing page designed for Urbinex, showcasing architectural services with bold visuals, clear structure, and a user-focused layout that highlights expertise and inspires trust.",
-      tags: ["Frontend", "Web Design"],
-      location: "Australia",
-      duration: "3 months",
+      title: "Foodora - Food Delivery App UI",
+      description: "Designed a mobile-first food delivery app UI using React and Tailwind CSS. Includes menu browsing, ordering flow, and smooth interactive components for enhanced UX.",
+      tags: ["Mobile Apps", "UI Design"],
+      location: "Canada",
+      duration: "2 months",
       year: "2025",
-      image: "https://placehold.co/400x600/1e1e2e/999999?text=Mobile+Mockup+3"
+      image: img4
     }
   ],
   experience: [
     {
       role: "Junior UI/UX Designer",
-      company: "Nano Blocks Studio",
-      location: "Copenhagen, Denmark",
-      years: "2011 - 2014"
+      company: "Nile Shopal",
+      location: "Ethiopia,Bahir Dar",
+      years: "2022 - 2023"
     },
     {
-      role: "Product Designer",
-      company: "Digital Edge Inc.",
-      location: "Edinburgh, Scotland",
-      years: "2014 - 2016"
+      role: "Front end developer",
+      company: "Goha Sftware.",
+      location: "Ethiopia,Bahir Dar",
+      years: "2022 - 2024"
     },
     {
-      role: "Lead Product Designer",
+      role: "Web Developer",
       company: "InnovaTech Solutions",
-      location: "London, UK",
+      location: "Ethiopia, A.A",
       years: "2016 - 2021"
     },
     {
-      role: "Principal Visual Designer",
-      company: "Zigma Ventures",
-      location: "Edinburgh, Scotland",
+      role: "Front-End developer",
+      company: "Aquila Ict Solution",
+      location: "Ethiopia, A.A",
       years: "2021 - Present"
     }
   ],

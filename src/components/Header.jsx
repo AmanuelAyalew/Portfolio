@@ -13,7 +13,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <a href="#home" className="flex items-center space-x-2 text-xl font-bold text-indigo-400 hover:text-indigo-300 transition duration-300 group">
           {/* <Aperture className="w-6 h-6 group-hover:rotate-180 transition-transform duration-700"/> */}
-          <span className="hidden sm:inline">Anders' Portfolio</span>
+          <span className="hidden sm:inline">Amanuel' Portfolio</span>
         </a>
         
         <nav className="hidden md:flex space-x-6">
